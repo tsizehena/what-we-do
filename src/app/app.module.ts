@@ -13,6 +13,7 @@ import { UserComponent } from './user/user/user.component';
 import { EventService } from './vote/event.service';
 import { WelcomePageComponent } from './vote/welcome-page/welcome-page.component';
 import { HeaderComponent } from './common/header/header.component';
+import {RatingModule} from "ngx-rating";
 
 const appRoutes: Routes = [
   {
@@ -47,7 +48,8 @@ const appRoutes: Routes = [
     BrowserModule,
     FormsModule,
     HttpModule,
-    RouterModule.forRoot(appRoutes)
+    RouterModule.forRoot(appRoutes),
+    RatingModule
   ],
   providers: [EventService],
   bootstrap: [AppComponent]

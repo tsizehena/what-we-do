@@ -3,6 +3,9 @@ import { Event } from '../event';
 import { EventService } from '../event.service';
 import {ActivatedRoute, Params} from '@angular/router';
 import { Observable } from 'rxjs';
+import { Community } from '../community';
+import { Choice } from '../../choice/choice';
+import { Note } from '../../choice/note';
 
 @Component({
   selector: 'app-vote-page',
@@ -11,6 +14,7 @@ import { Observable } from 'rxjs';
 })
 export class VotePageComponent implements OnInit {
   public event: Event;
+
   @Input()
   public title: string;
   @Input()

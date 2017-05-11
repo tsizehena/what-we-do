@@ -9,6 +9,8 @@ import { Event } from '../event';
 export class VoteDetailComponent implements OnInit {
   @Input()
   public event: Event;
+  public noteSize: number;
+
   constructor() { }
 
   ngOnInit() {

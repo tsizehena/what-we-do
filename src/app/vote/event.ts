@@ -11,6 +11,8 @@ export class Event {
   campaign_end: Date;
   @Type(() => Choice) choices: Choice[];
   community: Community;
+  penta: string;
+  comment: string;
 
   public setTitle(title) {
     this.title = title;
@@ -18,5 +20,15 @@ export class Event {
 
   public setDescription(description) {
     this.description = description;
+  }
+
+  public getNoteTitles() {
+    let titles = [];
+    let noteSize = this.community[0].notes.length;
+    for(var i = 0; i < noteSize; i++) {
+      titles.push(this.community[0].notes[i].label);
+    };
+
+    return titles;
   }
 }
