@@ -1,0 +1,15 @@
+{
+  "id": 1,
+  "penta": "mazaf",
+  "comment": "Commentaire ",
+  "choices": [
+    {
+      "id": 1,
+      "note_id": 2
+    },
+    {
+      "id": 2,
+      "note_id": 1
+    }
+  ]
+}

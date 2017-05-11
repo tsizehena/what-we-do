@@ -1,0 +1,38 @@
+{
+  "id": 1,
+  "title": "My event",
+  "description": "Description",
+  "campaign_begin": "10-05-2017",
+  "campaign_end": "15-05-2017",
+  "choices": [
+      {
+        "id": 1,
+        "title": "Choix 1",
+        "description": "Description 1"
+      },
+      {
+        "id": 2,
+        "title": "Choix 2",
+        "description": "Description 2"
+      }
+  ],
+  "community": [
+    {
+      "id": 1,
+      "title": "Community title",
+      "description": "Community description",
+      "notes": [
+        {
+          "id": 1,
+          "value": 0,
+          "label": "Je ne viendrais pas"
+        },
+        {
+          "id": 2,
+          "value": 1,
+          "label": "Je viendrais"
+        }
+      ]
+    }
+  ]
+}
