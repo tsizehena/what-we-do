@@ -2,6 +2,8 @@ import { Component, OnInit, Input } from '@angular/core';
 import { Event } from '../event';
 import { EventService } from '../event.service';
 import {ActivatedRoute, Params} from '@angular/router';
+import { Choice } from '../../choice/choice';
+import { Note } from '../../choice/note';
 import { Observable } from 'rxjs';
 
 @Component({
@@ -11,6 +13,7 @@ import { Observable } from 'rxjs';
 })
 export class VotePageComponent implements OnInit {
   public event: Event;
+
   @Input()
   public title: string;
   @Input()
@@ -26,7 +29,6 @@ export class VotePageComponent implements OnInit {
         //let eventId: number = params['id'];
         let event: Observable<Event> = this.eventService.get(1);
         return Observable.zip(event);
-        //this.eventService.get(1).subscribe((data) => {this.event = data});
       })
       .subscribe((o: [Event]) => {
         this.event = o[0];

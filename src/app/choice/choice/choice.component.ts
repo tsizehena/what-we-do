@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./choice.component.css']
 })
 export class ChoiceComponent implements OnInit {
-
+  private rate: number;
   constructor() { }
 
   ngOnInit() {

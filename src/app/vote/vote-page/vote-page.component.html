@@ -1,2 +1,16 @@
 <app-header [title]="title" [description]="description"></app-header>
-<app-vote-detail [event]="event"></app-vote-detail>
+<div class="container">
+  <div class="row">
+    <div class="col-md-2">
+    </div>
+    <div class="col-md-8">
+      <div class="panel panel-warning">
+        <div class="panel-body">
+          <app-vote-detail [event]="event" [masterEvent]="event"></app-vote-detail>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-2">
+    </div>
+  </div>
+</div>
